@@ -1,0 +1,22 @@
+<p>ngfor works!</p>
+<ul>
+    <li *ngFor="let estudiante of estudiantes">{{estudiante.nombre}}</li>
+</ul>
+<ol>
+    @for (estudiante of estudiantes; track $index) {
+    @if (estudiante.id>2) {
+    <li>{{estudiante.nombre}}</li>
+    }
+    }
+</ol>
+@switch (color) {
+@case ('red') {
+<p>rojo</p>
+}
+@case ('green') {
+<p>verde</p>
+}
+@default {
+<p>blanco</p>
+}
+}
